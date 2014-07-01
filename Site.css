@@ -1,0 +1,233 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  /* The html and body elements cannot have any padding or margin. */
+}
+.header{
+	height: 80px;
+	width: 100%;
+	background: #0c750e;
+	
+}
+.img-full-fluid{
+			float:left;
+			margin:10px;
+			margin-top: 10px;
+			box-shadow: 5px 5px 5px #888888;
+}
+.img-full-fluid:hover{
+	-webkit-transform: rotate(0deg) scale(1.55);
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+}
+.left-fluid{
+			float:left;
+			margin:10px;
+			margin-top: 10px;
+			-webkit-box-shadow: 2px 2px 20px #888;
+			-webkit-transform: rotate(0deg);
+			-moz-box-shadow: 2px 2px 20px #888;
+			-moz-transform: rotate(0deg); 
+			 border:5px solid rgba(255,155,1,.7);
+		}
+.container{
+	/*background:#983274;
+	background: rgba(220, 151, 236, .4);*/
+	background:rgba(255, 255, 255, .4);
+	max-width:980px;
+	border-top:none;
+	border-bottom:none;
+	border-right:solid 1px #fafafa;
+	border-left:solid 1px #fafafa;
+	padding-top:70px;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f8f8f8;
+  border-radius:2px;
+}
+/*end of tutorial blocks*/
+
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+    max-width: 980px;
+}
+	  
+.container-narrow > hr {
+	margin: 30px 0;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 50px 2px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+  font-size:small;
+}
+
+#footer > .container {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+code {
+  font-size: 100%;
+}
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    
+        border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+select[multiple].input-validation-error {
+   border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+select.input-validation-error {
+   border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+textarea.input-validation-error {
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+.validation-summary-errors {
+    color: #b94a48;
+    font-weight: bold;
+    font-size: 10px;
+}
+.validation-summary-valid {
+    display: none;
+}
+.headerLogo {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  background-color:#5cb85c;
+  color:white;
+
+  text-align:center;
+}
+/* Ajax Loader*/
+
+.ajxLoader {
+    display:block;
+}
+.spacer {
+    margin-top:10px;
+}
+.spacer1 {
+    margin-top:20px;
+}
+.spacer2 {
+    margin-top:30px;
+}
+.spacer3 {
+    margin-top:40px;
+}
+.spacer4 {
+    margin-top:50px;
+}
+.spacer5 {
+    margin-top:60px;
+}
+.spacer6 {
+    margin-top:70px;
+}
+.left-spacer{
+	margin-left:20px;
+}
+.spinLoader {
+    height: 20px;
+    width: 30px;
+    background-size: 20px;
+    -moz-background-size: 20px;
+    -o-background-size: 20px;
+    -webkit-background-size: 20px;
+    background: url(../images/loader.gif) no-repeat 0px 0px;
+
+}
+
+/* Tags Input*/
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 22px;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: auto !important;
+  max-width: inherit;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  
+  
+}
+/* End Tags Input*/
+
