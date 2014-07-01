@@ -1,0 +1,61 @@
+.border-box {
+    box-sizing: border-box;
+}
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 109%;
+    
+ position: relative;
+ background-color:#fff;
+ /*background-color: rgba(7, 161, 211, 10);
+ background-image: -moz-linear-gradient(top, #1a99f1, #1791e5);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1a99f1), to(#1791e5));
+background-image: -webkit-linear-gradient(top, #1a99f1, #1791e5);
+background-image: -o-linear-gradient(top, #1a99f1, #1791e5);
+background-image: linear-gradient(to bottom, #1a99f1, #1791e5);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0); */
+ color: #888;
+ text-align:left;
+ padding: 1.5em 2em; /* Adjust to suit */
+ margin: 1em auto 2em -2.5em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+
+ }
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #fff;
+ z-index:-2;
+}
+.ribbon:before {
+ left: -2.5em;
+ border-right-width: 2em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 2em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #ccc transparent transparent transparent;
+ bottom: -1em;
+ z-index:-1;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+.ribbon-text{
